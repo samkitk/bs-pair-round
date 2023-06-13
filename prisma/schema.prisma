@@ -11,7 +11,8 @@ datasource db {
 }
 
 
-model DummyTable {
+model URLShortner {
   id Int @id @default(autoincrement())
-  name String
+  short String @unique
+  long String
 }
